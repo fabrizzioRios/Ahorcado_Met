@@ -1,0 +1,35 @@
+
+class Car:
+
+    def __init__(self, tanque_gas: int):
+        self.tanque_gas = tanque_gas
+
+loop = 0
+
+while loop == 0:
+    car1 = Car(5)
+    des = int(input(print("Bienvenido usuario,¿Que desea realizar?\n 1.- Recargar gasolina\n "
+                "2.- Checar cuanta gasolina tiene\n 3.- Salir")))
+
+    if des == 1:
+
+        opt = int(input(print("¿Desea llenar el tanque?\n si = 1\n no = 0")))
+
+        if opt == 1:
+            tot = car1.tanque_gas = 50
+            print(f"Su gasolina es {tot} litros de gasolina")
+
+        elif opt == 0:
+            lit = int(input(print("¿Cuantos litros necesita?")))
+            tot = car1.tanque_gas + lit
+            print(f"Su gasolina es {tot} litros de gasolina")
+
+    elif des == 2:
+        gas = car1.tanque_gas
+        print(f"Su gasolina es {gas} litros de gasolina")
+
+    elif des == 3:
+        loop = 1
+
+    else:
+        print("No es una decision valida")
