@@ -324,5 +324,3 @@ char leerLetra() {
     }
     return letra;
 }
-
-
